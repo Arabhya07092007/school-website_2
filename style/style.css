@@ -32,6 +32,7 @@
 
 body {
   background-color: #f7f3fe;
+  width: 100%;
 }
 
 .nav-list {
@@ -40,6 +41,7 @@ body {
   justify-content: center;
   /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
   font-family: "Exo 2", sans-serif;
+  transition: 0.25s;
 }
 
 .nav-list p {
@@ -56,7 +58,7 @@ body {
 .nav-list p a:hover {
   /* padding: 18px 30px; */
   text-decoration: none;
-  color: #FFCF00;
+  color: #ffcf00;
 }
 
 .box-main {
@@ -100,17 +102,17 @@ body {
 }
 .yellow {
   color: #ffcf00;
-  
+
   font-size: 41px;
   font-family: "Oswald", sans-serif;
   padding-left: 7px;
-  padding-right:7px;
+  padding-right: 7px;
 }
 
 .secondHalf {
   width: 40%;
 }
-.titletxt{
+.titletxt {
   display: flex;
 }
 .text-big {
@@ -152,6 +154,10 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #282828;
+}
+
+.contlogoparent {
+  display: flex;
 }
 
 #title {
@@ -249,8 +255,8 @@ body {
 
 .weltitle {
   font-family: monsans-serifospace;
-  
-/* font-family: 'Yatra One', cursive; */
+
+  /* font-family: 'Yatra One', cursive; */
   color: #363e55;
   font-size: 45px;
 }
@@ -350,17 +356,9 @@ body {
   height: 290px;
 }
 
-
-/* 
-@media only screen and (max-width:950px){
-  .nav-list{
-    flex-direction: column;
-  }
-} */
-
-/* body {
+body {
   font-family: "Lato", sans-serif;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 }
 
 .sidenav {
@@ -398,17 +396,29 @@ body {
 }
 
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 16px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-} */
+@media only screen and (max-width: 1000px) {
+  .nav-list {
+    /* flex-direction: column; */
+    position: absolute;
+    /* top: -200px; */
 
-/* @media screen and (min-width: 480px) {
-  body {
-    background-color: lightgreen;
+    visibility: hidden;
   }
-} */
+
+  .box-main {
+    width: 100vh;
+    flex-direction: column-reverse;
+  }
+
+  body {
+    width: 220%;
+  }
+
+  .background {
+    height: 170vh;
+  }
+}
