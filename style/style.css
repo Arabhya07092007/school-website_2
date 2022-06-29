@@ -159,14 +159,18 @@ body {
 }
 
 .logoCont {
-  display: flex;
+  /* display: flex; */
+  background-color: #282828;
   justify-content: center;
   align-items: center;
-  background-color: #282828;
+}
+
+.logo-cont {
+  justify-content: center;
 }
 
 .contlogoparent {
-  display: flex;
+  /* display: flex; */
 }
 
 #title {
@@ -212,13 +216,12 @@ body {
 }
 
 .cards {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: rgb(237, 236, 236);
-  height: 100vh;
-  /* justify-content: center; */
-  align-items: center;
-  padding-top: 5%;
+  width: 74%;
+  height: 554px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0px 3px 3px rgb(0 0 0 / 40%);
+  margin: auto;
 }
 
 .sectionSubTag {
@@ -362,7 +365,7 @@ body {
   padding: 10px;
   /* margin-bottom: 10px; */
   /* background-color: #363e55; */
-  height: 290px;
+  /* height: 290px; */
 }
 
 body {
@@ -386,8 +389,8 @@ body {
 
 .ham-menu {
   position: absolute;
-  left: 765px;
-  top: 20px;
+  left: 755px;
+  top: 80px;
   visibility: hidden;
 }
 
@@ -417,12 +420,15 @@ body {
   padding: 16px;
 }
 
+.brcont {
+  visibility: hidden;
+  top: -1000px;
+  position: absolute;
+}
+
 @media only screen and (max-width: 1000px) {
   .nav-list {
-    /* flex-direction: column; */
     position: absolute;
-    /* top: -200px; */
-
     visibility: hidden;
   }
 
@@ -439,16 +445,67 @@ body {
     height: 170vh;
   }
 
-  .logoCont {
-    padding: 10px;
+  .brcont {
+    padding: 20px;
+    background-color: #282828;
+    visibility: visible;
+    top: 0px;
+    position: relative;
   }
 
-.ham-menu{
-  visibility: visible;
-}
+  .logo {
+    width: 16%;
+    justify-content: center;
+    margin-left: 350px;
+  }
 
-.sidenav{
-  visibility: visible;
-}
+  .title {
+    text-align: center;
+    font-size: 75px;
+    font-family: "Exo 2", sans-serif;
+    color: white;
+  }
 
+  .subtitle {
+    text-align: center;
+    color: white;
+  }
+
+  .ham-menu {
+    visibility: visible;
+  }
+
+  .sidenav {
+    visibility: visible;
+  }
+
+  .cards {
+    flex-direction: column;
+    display: block;
+    height: auto;
+    /* margin-top: 5%; */
+    width: 100%;
+    justify-content: center;
+    /* margin: auto; */
+    margin-top: 40px;
+  }
+
+  #card {
+    width: 80%;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    /* margin: 30px; */
+  }
+
+  .card-cont {
+    margin: 50px;
+  }
+
+  .cardCont {
+    padding: 10px;
+    height: 600px;
+  }
 }
