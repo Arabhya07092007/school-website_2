@@ -17,7 +17,7 @@
   position: sticky;
   top: 0;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #4a484c;
 }
 
 #logo {
@@ -56,6 +56,12 @@ body {
 }
 
 .nav-list p a:hover {
+  /* padding: 18px 30px; */
+  text-decoration: none;
+  color: #ffcf00;
+}
+
+.sd-nav p a:hover {
   /* padding: 18px 30px; */
   text-decoration: none;
   color: #ffcf00;
@@ -100,6 +106,7 @@ body {
   flex-direction: column;
   font-family: "Oswald", sans-serif;
 }
+
 .yellow {
   color: #ffcf00;
 
@@ -112,9 +119,11 @@ body {
 .secondHalf {
   width: 40%;
 }
+
 .titletxt {
   display: flex;
 }
+
 .text-big {
   font-size: 41px;
 }
@@ -333,7 +342,7 @@ body {
   width: 290px;
 
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
   border-radius: 8px;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
   margin: 1%;
@@ -363,7 +372,7 @@ body {
 
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 330px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -372,12 +381,20 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  visibility: hidden;
+}
+
+.ham-menu {
+  position: absolute;
+  left: 765px;
+  top: 20px;
+  visibility: hidden;
 }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 50px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -390,8 +407,8 @@ body {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
+  right: 20px;
+  font-size: 50px;
   margin-left: 50px;
 }
 
@@ -421,4 +438,17 @@ body {
   .background {
     height: 170vh;
   }
+
+  .logoCont {
+    padding: 10px;
+  }
+
+.ham-menu{
+  visibility: visible;
+}
+
+.sidenav{
+  visibility: visible;
+}
+
 }
