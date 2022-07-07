@@ -7,22 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style/aboutus.css" />
+  <script src="sketch.js"></script>
+
     <title>DSS about us</title>
 </head>
 
 <body>
-    <div class="logoCont">
-        <img id="logo" src="http://www.dpsjhakri.com/images/dps_logo1.png" alt="logo" class="logo" />
-        <div class="cont">
-            <h1 id="title">Divine Sainik school</h1>
-            <h3 id="subtitle">
-                सत्यम परम धिमहि : अनुशासन राष्ट्र को मजबूत बनाता है |
-                </h2>
+    <div class="branding">
+        <div class="brcont">
+            <img src="http://www.dpsjhakri.com/images/dps_logo1.png" alt="" class="logo">
+            <h1 class="title">Divine Sainik Shool</h1>
+            <h1 class="subtitle">
+                सत्यम परम धिमहि : अनुशासन राष्ट्र को मजबूत बनाता है |</h1>
+
+        </div>
+        <div class="ham-menu">
+            <span style="font-size:50px;cursor:pointer;color:white; align-self: center;padding: 10px;"
+                onclick="openNav()">&#9776; </span>
         </div>
     </div>
+
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="sd-nav">
+            <p><a href="#home">Home</a></p>
+            <p><a href="aboutus.html">About us</a></p>
+            <p><a href="#photo-gallery">Photo Gallery</a></p>
+            <p><a href="#admission">Admissions</a></p>
+            <p><a href="#contact">Contact us</a></p>
+        </div>
+    </div>
+
     <nav class="navbar">
         <ul class="nav-list">
-            <p><a href="index.html">Home</a></p>
+            <p><a href="#home">Home</a></p>
             <p><a href="aboutus.html">About us</a></p>
             <p><a href="facilties.html">Facilities</a></p>
             <p><a href="#photo-gallery">Photo Gallery</a></p>
@@ -80,8 +100,7 @@
 
     <section class="story">
         <div class="sec-cont">
-            <img src="https://pbs.twimg.com/media/ECFccIyU0AI_p8o?format=jpg&name=4096x4096"
-                alt="School" id="stimg">
+            <img src="https://pbs.twimg.com/media/ECFccIyU0AI_p8o?format=jpg&name=4096x4096" alt="School" id="stimg">
             <div class="st-cont">
                 <h1 class="st-title">STORY</h1>
 

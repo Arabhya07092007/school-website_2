@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Tiro+Devanagari+Hindi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&family=PT+Serif:wght@700&family=Tiro+Devanagari+Hindi&family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Oswald&family=Tiro+Devanagari+Hindi&family=Yatra+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -31,9 +36,7 @@
 }
 
 #title {
-  /* color: white; */
   font-size: 60px;
-  /* font-family: adam; */
   font-weight: bold;
   color: white;
 }
@@ -41,6 +44,8 @@
 #subtitle {
   color: white;
   text-align: center;
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-size: 22px;
 }
 
 .logoCont {
@@ -70,7 +75,7 @@
 
 .nav-list p a:hover {
   text-decoration: none;
-  color: #FFCF00;
+  color: #ffcf00;
 }
 
 .footercont {
@@ -92,12 +97,14 @@
   width: 100%;
   background-color: #e78432;
 }
+
 .footertxt {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   margin-top: 10px;
   cursor: pointer;
 }
+
 #copywrite {
   text-align: center;
   padding: 1%;
@@ -181,6 +188,7 @@
   /* position: absolute; */
   /* display: block; */
 }
+
 #second-img {
   width: 35%;
   /* height: 10%; */
@@ -225,6 +233,7 @@
   margin: 5%;
   /* padding: 3%; */
 }
+
 .scl {
   padding: 2%;
 }
@@ -241,4 +250,115 @@
   font-size: medium;
   margin-top: 10px;
   /* font-size: 33px; */
+}
+
+.branding {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #282828;
+}
+
+.brcont {
+  visibility: hidden;
+  top: -1000px;
+  position: absolute;
+}
+
+.ham-menu {
+  visibility: hidden;
+}
+
+#logo {
+  width: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  /* border-radius: 200px; */
+  padding: 1%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 330px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  visibility: hidden;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+.sd-nav p a:hover {
+  /* padding: 18px 30px; */
+  text-decoration: none;
+  color: #ffcf00;
+}
+
+@media only screen and (max-width: 1000px) {
+  .brcont {
+    padding: 20px;
+    background-color: #282828;
+    visibility: visible;
+    top: 0px;
+    position: relative;
+  }
+
+  .ham-menu {
+    visibility: visible;
+  }
+
+  .logo {
+    width: 16%;
+    justify-content: center;
+    margin-left: 350px;
+  }
+
+  .sidenav {
+    visibility: visible;
+  }
+
+  .nav-list {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 35px;
+    font-family: "Exo 2", sans-serif;
+    color: white;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+  }
 }
