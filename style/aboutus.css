@@ -258,6 +258,7 @@
   justify-content: center;
   align-items: center;
   background-color: #282828;
+  padding: 7px;
 }
 
 .brcont {
@@ -297,7 +298,7 @@
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 30px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -323,11 +324,12 @@
 
 @media only screen and (max-width: 1000px) {
   .brcont {
-    padding: 20px;
+    /* padding: 20px; */
     background-color: #282828;
     visibility: visible;
     top: 0px;
     position: relative;
+    justify-content: center;
   }
 
   .ham-menu {
@@ -337,7 +339,7 @@
   .logo {
     width: 16%;
     justify-content: center;
-    margin-left: 350px;
+    margin-left: 150px;
   }
 
   .sidenav {
@@ -351,7 +353,7 @@
 
   .title {
     text-align: center;
-    font-size: 35px;
+    font-size: 20px;
     font-family: "Exo 2", sans-serif;
     color: white;
   }
@@ -359,6 +361,24 @@
   .subtitle {
     text-align: center;
     color: white;
-    font-size: 14px;
+    font-size: 10px;
   }
+
+  
+#stimg {
+  width: 100%;
+  /* height: 40%; */
+  object-fit: cover;
+  /* top: -40; */
+  border-radius: 10px;
+  /* position: absolute; */
+  /* display: block; */
+}
+
+.sec-cont {
+  /* display: flex; */
+  display: block;
+  /* border-radius: 5px; */
+}
+
 }
