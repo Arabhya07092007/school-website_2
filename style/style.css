@@ -159,18 +159,14 @@ body {
 }
 
 .logoCont {
-  /* display: flex; */
-  background-color: #282828;
+  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.logo-cont {
-  justify-content: center;
+  background-color: #282828;
 }
 
 .contlogoparent {
-  /* display: flex; */
+  display: flex;
 }
 
 #title {
@@ -216,12 +212,13 @@ body {
 }
 
 .cards {
-  width: 74%;
-  height: 554px;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0px 3px 3px rgb(0 0 0 / 40%);
-  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(237, 236, 236);
+  height: 100vh;
+  /* justify-content: center; */
+  align-items: center;
+  padding-top: 5%;
 }
 
 .sectionSubTag {
@@ -365,7 +362,7 @@ body {
   padding: 10px;
   /* margin-bottom: 10px; */
   /* background-color: #363e55; */
-  /* height: 290px; */
+  height: 290px;
 }
 
 body {
@@ -389,8 +386,8 @@ body {
 
 .ham-menu {
   position: absolute;
-  left: 755px;
-  top: 80px;
+  left: 800px;
+  top: 50px;
   visibility: hidden;
 }
 
@@ -420,15 +417,12 @@ body {
   padding: 16px;
 }
 
-.brcont {
-  visibility: hidden;
-  top: -1000px;
-  position: absolute;
-}
-
 @media only screen and (max-width: 1000px) {
   .nav-list {
+    /* flex-direction: column; */
     position: absolute;
+    /* top: -200px; */
+
     visibility: hidden;
   }
 
@@ -438,37 +432,19 @@ body {
   }
 
   body {
-    width: 100vh;
+    width: 220%;
   }
 
   .background {
     height: 170vh;
   }
 
-  .brcont {
-    padding: 20px;
-    background-color: #282828;
-    visibility: visible;
-    top: 0px;
-    position: relative;
+  .logoCont {
+    padding: 10px;
   }
 
-  .logo {
-    width: 16%;
-    justify-content: center;
-    margin-left: 350px;
-  }
-
-  .title {
-    text-align: center;
-    font-size: 75px;
-    font-family: "Exo 2", sans-serif;
-    color: white;
-  }
-
-  .subtitle {
-    text-align: center;
-    color: white;
+  #logo {
+    width: 14%;
   }
 
   .ham-menu {
@@ -476,36 +452,6 @@ body {
   }
 
   .sidenav {
-    visibility: visible;
-  }
-
-  .cards {
-    flex-direction: column;
-    display: block;
-    height: auto;
-    /* margin-top: 5%; */
-    width: 100%;
-    justify-content: center;
-    /* margin: auto; */
-    margin-top: 40px;
-  }
-
-  #card {
-    width: 80%;
-    height: 550px;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
-    margin: auto;
-    /* margin: 30px; */
-  }
-
-  .card-cont {
-    margin: 50px;
-  }
-
-  .cardCont {
-    padding: 10px;
-    height: 600px;
+    /* visibility: visible; */
   }
 }
