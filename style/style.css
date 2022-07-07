@@ -447,10 +447,12 @@ body {
   .box-main {
     width: 100vh;
     flex-direction: column-reverse;
+    background-color: red;
   }
 
   body {
-    width: 100vh;
+    width: 125vh;
+    justify-content: center;
   }
 
   .background {
