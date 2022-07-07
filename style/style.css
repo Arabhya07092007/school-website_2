@@ -408,7 +408,7 @@ body {
 }
 
 .sidenav .closebtn {
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   right: 20px;
   font-size: 50px;
@@ -447,11 +447,11 @@ body {
   .box-main {
     width: 100vh;
     flex-direction: column-reverse;
-    background-color: red;
+    /* background-color: red; */
   }
 
   body {
-    width: 125vh;
+    width: 228%;
     justify-content: center;
   }
 
