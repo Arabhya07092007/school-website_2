@@ -20,6 +20,8 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.emphasise-1 {
+}
 #logo {
   width: 8%;
   display: flex;
@@ -190,11 +192,13 @@
 }
 
 #second-img {
-  width: 35%;
+  width: 40%;
   /* height: 10%; */
   object-fit: cover;
   /* top: -40; */
   border-radius: 10px;
+  justify-content: center;
+  justify-self: center;
   /* position: absolute; */
   /* display: block; */
 }
@@ -216,11 +220,10 @@
 }
 
 .leader-img {
-  width: 20%;
-  /* height: 50%; */
+  width: 210px;
   border-radius: 5px;
-
   object-fit: cover;
+  padding: 10px;
 }
 
 .scl {
@@ -242,14 +245,17 @@
   margin: 2%;
 }
 
-.emphasise {
+.emphasise-1 {
+  visibility: hidden;
+  font-size: 0px;
+}
+
+.emphasise-2 {
   font-weight: bolder;
   font-family: "Lato", sans-serif;
-  /* font-size: 14px; */
   color: #363e55;
   font-size: medium;
   margin-top: 10px;
-  /* font-size: 33px; */
 }
 
 .branding {
@@ -283,7 +289,7 @@
 
 .sidenav {
   height: 100%;
-  width: 330px;
+  width: 230px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -339,7 +345,7 @@
   .logo {
     width: 16%;
     justify-content: center;
-    margin-left: 150px;
+    margin-left: 120px;
   }
 
   .sidenav {
@@ -353,9 +359,15 @@
 
   .title {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Exo 2", sans-serif;
     color: white;
+  }
+
+  .st-title {
+    font-family: "Lato", sans-serif;
+
+    font-size: 18px;
   }
 
   .subtitle {
@@ -364,21 +376,54 @@
     font-size: 10px;
   }
 
-  
-#stimg {
-  width: 100%;
-  /* height: 40%; */
-  object-fit: cover;
-  /* top: -40; */
-  border-radius: 10px;
-  /* position: absolute; */
-  /* display: block; */
-}
+  #stimg {
+    width: 100%;
+    /* height: 40%; */
+    object-fit: cover;
+    /* top: -40; */
+    border-radius: 10px;
+    /* position: absolute; */
+    /* display: block; */
+  }
 
-.sec-cont {
-  /* display: flex; */
-  display: block;
-  /* border-radius: 5px; */
-}
+  .description {
+    font-size: 12px;
+  }
 
+  .sec-cont {
+    /* display: flex; */
+    display: block;
+    /* border-radius: 5px; */
+  }
+
+  .leader-img {
+    width: 160px;
+    height: 165px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  .emphasise-1 {
+    font-weight: bolder;
+    font-family: "Lato", sans-serif;
+    color: #363e55;
+    font-size: medium;
+    margin-top: 10px;
+    visibility: visible;
+    font-size: 20px;
+  }
+
+  .emphasise-2 {
+    visibility: hidden;
+    font-size: 0px;
+  }
+
+  .scl {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #second-img {
+    width: 100%;
+  }
 }
